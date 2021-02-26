@@ -1,0 +1,4 @@
+Zipkin is the distributed tracing system
+With this we can trace all the requests in microservice appl
+It will use RabbitMQ
+First the 

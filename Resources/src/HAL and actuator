@@ -1,0 +1,4 @@
+Actuator  - Used for monitoring the application
+
+Add below property to application.properties
+management.endpoints.web.exposure.include=*

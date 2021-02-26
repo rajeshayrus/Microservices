@@ -1,0 +1,16 @@
+Swagger is service documentation for the REST services
+
+Configuring Swagger:
+
+	Add dependency - Swagger-starter
+	Create a config class and configure bean which returns Docket
+	
+	
+Enhancing Swagger:
+
+	For API level , we can use Docket class methods for enhancing - like API_INFO, contact info, produces, consumes
+	
+	For Models, 
+		@ApiModel() - top of class
+		@ApiModelProperty() - for properties
+		

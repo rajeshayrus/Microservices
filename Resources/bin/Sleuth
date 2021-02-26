@@ -1,0 +1,13 @@
+Sleuth will add unique ID to each request
+
+Configuration:
+	Add dependency
+	Add bean config in main class
+			@Bean
+			public AlwaysSampler defaultSampler() {
+				return new AlwaysSampler;
+			}
+			
+	to test , log the request or response
+	
+	

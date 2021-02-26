@@ -1,0 +1,19 @@
+Run second instance:
+	Right click > Run config > Right click on app.java > duplicate 
+	In popup : change app name
+			   In VMargs , -Dserver.port = ****
+			   
+
+Ribbon : used for load balancing, if we are making api call to other service , then we can make call to only one instance directly
+	we might hard coded that url in feign client. 
+	If we use Ribbon, we can make calls to any instance depending on load
+	Configuring Ribbon :
+		Dependency in pom.xml (conversion service)
+		Enable Ribbon client in proxy class - @RibbonClient(name = "currency-exchange-service")
+		Remove hardcodedurl in feignclient annotation - @FeignClient(name = "currency-exchange-service",url = "localhost:8000")
+		Configure in application.properties
+
+
+
+using zuul API gateway
+to make calls : http://localhost:8765/{appl name}/uri

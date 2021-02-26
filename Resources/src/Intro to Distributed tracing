@@ -1,0 +1,10 @@
+In microservices , multiple service calls involved
+If some bug is there, it is hard to debug and find the error
+
+So in Microservices arch, it is important to have one distributed tracing
+
+Spring cloud sleuth with zipkin
+
+By assigning unique ID to request so that we can trace across services
+
+We will put req in Mqueue and will trace
